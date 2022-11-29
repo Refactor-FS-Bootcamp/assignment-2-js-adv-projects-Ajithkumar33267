@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* position: relative; */
+}
+
+.main {
+  margin-top: 0;
+  width: 60rem;
+  min-width: 20rem;
+  height: 40rem;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  /* top: 20px; */
+}
+
+.main .heading {
+  color: #0212f7;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin-top: -150px;
+}
+
+.form {
+  padding: 30px;
+  margin-top: 20px;
+  width: 20rem;
+  height: 20rem;
+  background-color: #95a5a6;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.title-div,
+.author-div,
+.isbn-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 5px;
+  color: white;
+}
+
+.title-div .warning,
+.author-div .warning,
+.isbn-div .warning {
+  transition: 300ms;
+  border: 2px solid red;
+}
+
+.title-div input,
+.author-div input,
+.isbn-div input {
+  width: 150px;
+  outline: none;
+  padding: 3px 5px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 5px 10px;
+  background-color: blue;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table {
+  position: absolute;
+  top: 70%;
+  width: 50rem;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #222f3e;
+  color: white;
+}
+
+.table th {
+  padding: 10px;
+}
+.caption {
+  color: #0212f7;
+  font-size: 30px;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
